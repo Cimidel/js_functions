@@ -104,9 +104,19 @@ function mapArray(arrayToMap,mappingFunction) {
     return newArray;
 }
 const arrayToMap = [1, 2, 3];
-const dubledArray =mapArray(arrayToMap, function (el) {
+const doubledArray =mapArray(arrayToMap, function (el) {
     return el * 2;
-})
-console.log(`arrayToMap: ${arrayToMap}`);
-console.log(`dubledArray: ${dubledArray}`);
+});
+
+console.log(`doubled2 : ${doubled2}`);
+
+//Aarrow functions 
+
+const sayHelloTo = (personName) => {
+    console.log(`Hello ${personName}`);
+};
+sayHelloTo(`Razvan`);
+
+const getGreeting = 
+
 
