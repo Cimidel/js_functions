@@ -53,3 +53,35 @@ function removeEvenNumbers(arrayToModify) {
 
 const array1Modified = removeEvenNumbers (array1);
 console.log(`Modified array1 is : ${array1Modified}`);
+
+
+const shoppingBasket = [];
+const stockProducts = [
+    {
+        name: `Hat`,
+        price: 30,
+        stock: 12
+    },
+    {
+        name:`Tricou`,
+        price: 30.99
+        stock: 40
+    }
+];
+
+function moveFromStockToBasket(productName) {
+    for (const products of stockProducts) {
+        if (productName.name===productName) {
+            shoppingBasket.push({name: productName.name, qunatity: 1});
+            productName.stock -= 1;
+        }
+    }
+
+}
+
+console.log(`Current stock:` , stockProducts);
+console.log(`Current basket:` , shoppingBasket);
+
+moveFromStockToBasket(`Hat`);
+console.log(`Current stock:` , stockProducts);
+console.log(`shopping basket:` , shoppingBasket);
