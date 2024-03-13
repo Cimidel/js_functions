@@ -85,3 +85,28 @@ console.log(`Current basket:` , shoppingBasket);
 moveFromStockToBasket(`Hat`);
 console.log(`Current stock:` , stockProducts);
 console.log(`shopping basket:` , shoppingBasket);
+
+//functii anonime
+
+const printHello = function () {
+    console.log(`hello`);
+};
+
+printHello();
+
+function mapArray(arrayToMap,mappingFunction) {
+    const newArray = [];
+    for (const elemnt of arraToMap) {
+        letmappingFunctionResult = mappingFunction(element)
+        newArray.push(mappingFunctionResult);
+
+    }
+    return newArray;
+}
+const arrayToMap = [1, 2, 3];
+const dubledArray =mapArray(arrayToMap, function (el) {
+    return el * 2;
+})
+console.log(`arrayToMap: ${arrayToMap}`);
+console.log(`dubledArray: ${dubledArray}`);
+
